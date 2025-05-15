@@ -16,57 +16,57 @@ const Destaques = () => {
                 <div>
                     <div className="conteudo">
                         <h6>30% off</h6>
-                        <h2>Novo drop<br/>Supreme</h2>
+                        <h2>Novo drop<br />Supreme</h2>
                         <a href="" className="btn inverso">Comprar</a>
                     </div>
-                    <img src={camisa} alt=""/>
+                    <img src={camisa} alt="" />
                 </div>
                 <div>
                     <div className="conteudo">
                         <h6>30% off</h6>
-                        <h2>Coleção<br/>Adidas</h2>
+                        <h2>Coleção<br />Adidas</h2>
                         <a href="" className="btn inverso">Comprar</a>
                     </div>
-                    <img src={tenis} alt=""/>
+                    <img src={tenis} alt="" />
                 </div>
                 <div>
                     <div className="conteudo">
                         <h6>30% off</h6>
-                        <h2>Novo<br/>Beats Bass</h2>
+                        <h2>Novo<br />Beats Bass</h2>
                         <a href="" className="btn inverso">Comprar</a>
                     </div>
-                    <img src={fone} alt=""/>
+                    <img src={fone} alt="" />
                 </div>
             </div>
             <h3>Departamentos</h3>
             <div className="departamentos">
                 <div>
                     <div className="icon">
-                        <img src={iconShirt} alt=""/>
+                        <img src={iconShirt} alt="" />
                     </div>
                     Camisetas
                 </div>
                 <div>
                     <div className="icon">
-                        <img src={iconPants} alt=""/>
+                        <img src={iconPants} alt="" />
                     </div>
                     Calças
                 </div>
                 <div>
                     <div className="icon">
-                        <img src={iconHat} alt="" className="bone"/>
+                        <img src={iconHat} alt="" className="bone" />
                     </div>
                     Bonés
                 </div>
                 <div>
                     <div className="icon">
-                        <img src={iconHeadphone} alt=""/>
+                        <img src={iconHeadphone} alt="" />
                     </div>
                     Headphones
                 </div>
                 <div>
                     <div className="icon">
-                        <img src={iconShoes} alt=""/>
+                        <img src={iconShoes} alt="" />
                     </div>
                     Tênis
                 </div>

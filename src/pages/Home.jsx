@@ -7,16 +7,12 @@ import Oferta from '../components/Oferta';
 
 const Home = () => {
     return (
-        <>
-            <Header />
-            <main>
-                <Banner />
-                <Destaques />
-                <Produtos />
-                <Oferta />
-            </main>
-            <Footer />
-        </>
+        <main>
+            <Banner />
+            <Destaques />
+            <Produtos />
+            <Oferta />
+        </main>
     );
 }
 

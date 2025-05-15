@@ -1,18 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import "tailwindcss";
 
+@theme {
+    --color-rosa: #C92071;
+    --color-rosa-hover: #991956;
+    --color-azul-claro: #B5B6F2;
+    --color-azul: #4200FF;
+    --color-grafite: #474747;
+    --color-amarelo: #F6AA1C;
+    --color-cinza-claro: #CCCCCC;
+}
 
 * {
-    margin: 0;
+    /* margin: 0;
     padding: 0;
     border: 0;
-    outline: 0;
+    outline: 0; */
     box-sizing: border-box;
     font-family: "Inter", sans-serif;
     text-decoration: none;
 }
 
-body{
+body {
     background-color: #F9F8FE;
 }
 
@@ -183,7 +192,7 @@ main {
             }
         }
 
-        & .tenis{
+        & .tenis {
             position: relative;
             z-index: 2;
         }
@@ -351,7 +360,7 @@ main {
                             margin-bottom: 10px;
                         }
 
-                        img{
+                        img {
                             width: 100%;
                         }
                     }
@@ -373,7 +382,7 @@ main {
                         font-size: 24px;
                         line-height: 38px;
 
-                        & del{
+                        & del {
                             color: #474747;
                             font-weight: normal;
                             text-decoration: line-through;
@@ -385,24 +394,24 @@ main {
         }
     }
 
-    #oferta{
+    #oferta {
         padding: 100px;
         display: flex;
         align-items: center;
         background-color: white;
         gap: 70px;
 
-        .produto-oferta{
+        .produto-oferta {
             width: 400px;
             position: relative;
             z-index: 2;
         }
 
-        & > div{
+        &>div {
             position: relative;
         }
 
-        .produto-detalhe{
+        .produto-detalhe {
             width: 350px;
             height: 350px;
             background-image: linear-gradient(#4200FF50, transparent 60%);
@@ -414,89 +423,95 @@ main {
             top: -30px;
         }
 
-        h6{
+        h6 {
             font-size: 12px;
             color: #C92071;
             line-height: 22px;
             margin-bottom: 16px;
         }
 
-        h2{
+        h2 {
             font-size: 48px;
             line-height: 50px;
             color: #474747;
             margin-bottom: 20px;
         }
 
-        p{
+        p {
             font-size: 16px;
             line-height: 28px;
             color: #474747;
             margin-bottom: 30px;
         }
 
-        .btn{
+        .btn {
             width: 200px;
         }
     }
 
 }
 
-footer{
+footer {
     background-color: #1f1f1f;
     color: white;
     padding: 100px 100px 0 100px;
 
-    & .rodape{
+    & .rodape {
         display: flex;
         justify-content: space-between;
-        & .conteudo{
+
+        & .conteudo {
             width: 300px;
-            & img{
+
+            & img {
                 margin-bottom: 35px;
             }
 
-            & p{
+            & p {
                 font-size: 16px;
                 line-height: 26px;
                 margin-bottom: 40px;
             }
 
-            & .redes{
+            & .redes {
                 display: flex;
                 gap: 35px;
-                & box-icon{
+
+                & box-icon {
                     fill: white;
                     transition-duration: 200ms;
-                    &:hover{
+
+                    &:hover {
                         fill: #C92071;
                     }
                 }
             }
         }
 
-        & .sitemap{
+        & .sitemap {
             display: flex;
             gap: 50px;
-            & div{
+
+            & div {
                 width: 170px;
 
-                & h5{
+                & h5 {
                     font-size: 18px;
                     margin-bottom: 28px;
                 }
 
-                & a{
+                & a {
                     display: block;
                     color: white;
                     transition-duration: 200ms;
                     margin-bottom: 18px;
-                    &:hover{
+
+                    &:hover {
                         color: #C92071;
                         margin-left: 10px;
                     }
 
-                    & address{
+                    & address {
                         font-style: normal;
                     }
                 }
@@ -504,7 +519,7 @@ footer{
         }
     }
 
-    & h6{
+    & h6 {
         text-align: center;
         padding: 22px 0;
         border-top: 1px solid #FFFFFF50;
@@ -515,32 +530,34 @@ footer{
 }
 
 
-@media screen and ( width <= 1024px ) {
-    main{
-        #banner{
-            & .conteudo{
+@media screen and (width <=1024px) {
+    main {
+        #banner {
+            & .conteudo {
                 left: 50px;
+
                 & h2 {
                     font-size: 50px;
                     line-height: 56px;
                 }
             }
-    
-            & .tenis{
+
+            & .tenis {
                 width: 600px;
             }
         }
 
-        #destaques{
+        #destaques {
             padding-left: 50px;
             padding-right: 50px;
 
-            & .colecoes{
-                & > div{
+            & .colecoes {
+                &>div {
                     padding-left: 16px;
                     padding-top: 16px;
                     padding-bottom: 16px;
-                    & img{
+
+                    & img {
                         width: 65%;
                     }
                 }
@@ -549,31 +566,33 @@ footer{
     }
 }
 
-@media screen and ( width <= 768px ) {
-    main{
-        #banner{
+@media screen and (width <=768px) {
+    main {
+        #banner {
             overflow: hidden;
             padding-left: 0;
             padding-bottom: 60px;
             flex-direction: column-reverse;
             justify-content: initial;
             align-items: center;
-            & .conteudo{
+
+            & .conteudo {
                 position: initial;
                 left: initial;
                 top: initial;
                 transform: none;
                 text-align: center;
-                .btn{
+
+                .btn {
                     margin: 0 auto;
                 }
             }
-    
-            & .tenis{
+
+            & .tenis {
                 height: 50%;
             }
 
-            & .detalhe{
+            & .detalhe {
                 width: 120px;
                 top: 0;
                 right: -60px;
@@ -582,57 +601,60 @@ footer{
     }
 }
 
-@media screen and ( width <= 450px ) {
-    main{
-        #banner{
+@media screen and (width <=450px) {
+    main {
+        #banner {
             padding-left: 16px;
             padding-right: 16px;
-            & .conteudo{
-                & h6{
+
+            & .conteudo {
+                & h6 {
                     color: #C92071;
                 }
 
-                & h2{
+                & h2 {
                     font-size: 40px;
                     line-height: 46px;
                     font-weight: 900;
                 }
 
-                & p{
+                & p {
                     font-size: 14px;
                     line-height: 22px;
-                    & br{
+
+                    & br {
                         display: none;
                     }
                 }
             }
-            & .tenis{
+
+            & .tenis {
                 width: auto;
                 height: 200px;
             }
 
-            & .detalhe{
+            & .detalhe {
                 width: 120px;
                 top: 0;
                 right: -60px;
             }
         }
 
-        #destaques{
+        #destaques {
             padding-left: 16px;
             padding-right: 16px;
-            
-            & .colecoes{
+
+            & .colecoes {
                 flex-direction: column;
 
-                & > div{
-                    & img{
+                &>div {
+                    & img {
                         width: auto;
                     }
                 }
             }
 
-            & .departamentos{
+            & .departamentos {
                 flex-wrap: wrap;
             }
 
